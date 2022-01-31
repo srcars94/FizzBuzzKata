@@ -6,7 +6,10 @@ namespace FizzBuzzKata
     {
         static void Main(string[] args)
         {
-            //GetValue();
+            for(var i = 0; i < 100; i++)
+            {
+                Console.WriteLine(GetValue(i));
+            }
         }
 
         public static string GetValue(int value)
