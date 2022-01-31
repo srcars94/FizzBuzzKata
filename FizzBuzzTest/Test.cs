@@ -7,13 +7,23 @@ namespace FizzBuzzTest
     public class Tests
     {
         [Test]
-        public void Does_Return_String()
+        public void Does_Return_String_Number_1()
         {
             var input = 1;
 
-            var fizzBuzz = Program.GetValue(input);
+            var output = Program.GetValue(input);
 
-            Assert.AreEqual(input.ToString(), fizzBuzz);
+            Assert.AreEqual(input.ToString(), output);
+        }
+
+        [Test]
+        public void Does_Return_String_Number_2()
+        {
+            var input = 2;
+
+            var output = Program.GetValue(input);
+
+            Assert.AreEqual(input.ToString(), output);
         }
     }
 }
