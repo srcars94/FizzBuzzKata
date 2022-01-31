@@ -3,19 +3,15 @@ using NUnit.Framework;
 
 namespace FizzBuzzTest
 {
+    [TestFixture]
     public class Tests
     {
-
-        [SetUp]
-        public void Setup()
-        {
-            
-        }
-
         [Test]
         public void Does_Return_String()
         {
-            var fizzBuzz = Program.FizzBuzz();
+            var input = 1;
+
+            var fizzBuzz = Program.GetValue(input);
 
             Assert.AreEqual("Hello", fizzBuzz);
         }

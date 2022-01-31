@@ -6,10 +6,10 @@ namespace FizzBuzzKata
     {
         static void Main(string[] args)
         {
-            FizzBuzz();
+            //GetValue();
         }
 
-        public static string FizzBuzz()
+        public static string GetValue(int value)
         {
             return "Hello";
         }
