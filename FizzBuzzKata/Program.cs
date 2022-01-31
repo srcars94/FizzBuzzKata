@@ -11,6 +11,8 @@ namespace FizzBuzzKata
 
         public static string GetValue(int value)
         {
+            if (value == 0) throw new ArgumentNullException();
+
             if (value % 3 == 0 && value % 5 == 0) return "FizzBuzz";
 
             if (value % 3 == 0) return "Fizz";

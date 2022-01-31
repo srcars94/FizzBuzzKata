@@ -1,5 +1,6 @@
 using FizzBuzzKata;
 using NUnit.Framework;
+using System;
 
 namespace FizzBuzzTest
 {
@@ -7,7 +8,7 @@ namespace FizzBuzzTest
     public class Tests
     {
         [Test]
-        public void Does_Return_Input([Values(1,2,4,7)] int input)
+        public void Does_Return_Input([Values(1, 2, 4, 7)] int input)
         {
             var output = Program.GetValue(input);
 
@@ -36,6 +37,12 @@ namespace FizzBuzzTest
             var output = Program.GetValue(input);
 
             Assert.AreEqual("FizzBuzz", output);
+        }
+
+        [Test]
+        public void Throws_Null_Exceptions([Values(0)] int input)
+        {
+            Assert.Throws<ArgumentNullException>(() => Program.GetValue(input));
         }
     }
 }
