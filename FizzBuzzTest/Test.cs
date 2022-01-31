@@ -31,9 +31,19 @@ namespace FizzBuzzTest
         {
             var input = 3;
 
-            var output = Program.GetValue(3);
+            var output = Program.GetValue(input);
 
             Assert.AreEqual("Fizz", output);
+        }
+
+        [Test]
+        public void Returns_Buzz_When_5()
+        {
+            var input = 5;
+
+            var output = Program.GetValue(input);
+
+            Assert.AreEqual("Buzz", output);
         }
     }
 }
