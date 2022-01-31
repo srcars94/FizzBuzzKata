@@ -13,7 +13,7 @@ namespace FizzBuzzTest
 
             var fizzBuzz = Program.GetValue(input);
 
-            Assert.AreEqual("Hello", fizzBuzz);
+            Assert.AreEqual(input.ToString(), fizzBuzz);
         }
     }
 }

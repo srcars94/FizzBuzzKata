@@ -11,7 +11,7 @@ namespace FizzBuzzKata
 
         public static string GetValue(int value)
         {
-            return "Hello";
+            return value.ToString();
         }
     }
 }
