@@ -1,18 +1,23 @@
+using FizzBuzzKata;
 using NUnit.Framework;
 
 namespace FizzBuzzTest
 {
     public class Tests
     {
+
         [SetUp]
         public void Setup()
         {
+            
         }
 
         [Test]
-        public void Test1()
+        public void Does_Return_String()
         {
-            Assert.Pass();
+            var fizzBuzz = Program.FizzBuzz();
+
+            Assert.AreEqual("Hello", fizzBuzz);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace FizzBuzzKata
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -11,7 +11,7 @@ namespace FizzBuzzKata
 
         public static string FizzBuzz()
         {
-            return string.Empty;
+            return "Hello";
         }
     }
 }
