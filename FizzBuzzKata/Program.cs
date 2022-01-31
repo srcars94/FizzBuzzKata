@@ -6,7 +6,12 @@ namespace FizzBuzzKata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World xxx!");
+            FizzBuzz();
+        }
+
+        public static string FizzBuzz()
+        {
+            return string.Empty;
         }
     }
 }
