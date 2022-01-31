@@ -8,7 +8,7 @@ namespace FizzBuzzTest
     {
         [Test]
         public void Does_Return_String_Number_1()
-        {
+       {
             var input = 1;
 
             var output = Program.GetValue(input);
@@ -44,6 +44,16 @@ namespace FizzBuzzTest
             var output = Program.GetValue(input);
 
             Assert.AreEqual("Buzz", output);
+        }
+
+        [Test]
+        public void Returns_FizzBuzz_When_15()
+        {
+            var input = 15;
+
+            var output = Program.GetValue(input);
+
+            Assert.AreEqual("FizzBuzz", output);
         }
     }
 }
