@@ -7,50 +7,32 @@ namespace FizzBuzzTest
     public class Tests
     {
         [Test]
-        public void Does_Return_String_Number_1()
-       {
-            var input = 1;
-
+        public void Does_Return_Input([Values(1,2,4,7)] int input)
+        {
             var output = Program.GetValue(input);
 
             Assert.AreEqual(input.ToString(), output);
         }
 
         [Test]
-        public void Does_Return_String_Number_2()
+        public void Returns_Fizz_When_Div_By_3([Values(3, 6, 9, 12)] int input)
         {
-            var input = 2;
-
-            var output = Program.GetValue(input);
-
-            Assert.AreEqual(input.ToString(), output);
-        }
-
-        [Test]
-        public void Returns_Fizz_When_3()
-        {
-            var input = 3;
-
             var output = Program.GetValue(input);
 
             Assert.AreEqual("Fizz", output);
         }
 
         [Test]
-        public void Returns_Buzz_When_5()
+        public void Returns_Buzz_When_Div_By_5([Values(5, 10, 20, 40)] int input)
         {
-            var input = 5;
-
             var output = Program.GetValue(input);
 
             Assert.AreEqual("Buzz", output);
         }
 
         [Test]
-        public void Returns_FizzBuzz_When_15()
+        public void Returns_FizzBuzz_When_Div_3_and_5([Values(15, 30, 60, 90)] int input)
         {
-            var input = 15;
-
             var output = Program.GetValue(input);
 
             Assert.AreEqual("FizzBuzz", output);
