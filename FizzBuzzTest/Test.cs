@@ -25,5 +25,15 @@ namespace FizzBuzzTest
 
             Assert.AreEqual(input.ToString(), output);
         }
+
+        [Test]
+        public void Returns_Fizz_When_3()
+        {
+            var input = 3;
+
+            var output = Program.GetValue(3);
+
+            Assert.AreEqual("Fizz", output);
+        }
     }
 }
